@@ -14,10 +14,12 @@ const [{userInfo}] = useStateProvider();
         <input type="text" placeholder="Artists, songs, or podcasts" />
       </div>
       <div className="avatar">
-        <a href="">
+        <div className="a">
         <CgProfile />
         <span>{userInfo?.userName}</span>
-        </a>
+        </div>
+        
+      
       </div>
     </Container>
   )
@@ -63,7 +65,7 @@ navBackground ? "rgba(0,0,0,0.7)" : "none"};
   display:flex;
   justify-content:center;
   align-items:center;
-  a{
+  .a{
     display:flex;
     align-items:center;
     justify-content:center;
@@ -72,7 +74,7 @@ navBackground ? "rgba(0,0,0,0.7)" : "none"};
     color:white;
     font-size:bold;
     svg{
-      font-size:1.3rem;
+      font-size:1.5rem;
       background-color:#282828;
       padding:0.2rem;
       border-radius:1rem;

@@ -18,7 +18,10 @@ function App() {
     // document.title = "Spotify";
   }, [dispatch, token]);
 
-  return <div>{token ? <Spotify /> : <Login />}</div>;
+  return <div>
+    {token ? <Spotify /> : <Login />}
+   
+    </div>;
 }
 
 export default App;
