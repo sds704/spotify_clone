@@ -10,7 +10,7 @@ export const initialState = {
   playerState: false,
 };
 
-const reducer = (state, action) => {
+const Reducer = (state, action) => {
   switch (action.type) {
     case reducerCases.SET_TOKEN: {
       return {
@@ -59,4 +59,4 @@ const reducer = (state, action) => {
   }
 };
 
-export default reducer;
+export default Reducer;
